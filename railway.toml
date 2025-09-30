@@ -1,0 +1,11 @@
+﻿[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "python -m uvicorn api.main:app --host 0.0.0.0 --port $PORT"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 300
+
+[env]
+PYTHONUNBUFFERED = "1"
+PYTHONDONTWRITEBYTECODE = "1"

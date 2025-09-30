@@ -1,0 +1,8 @@
+﻿outputs/
+data/
+*.bin
+*.pt
+*.safetensors
+__pycache__/
+*.pyc
+.env
